@@ -11,6 +11,7 @@ subnet 192.168.10.0 netmask 255.255.255.0 {
   option subnet-mask 255.255.255.0;
   option domain-name-servers 8.8.8.8;
   option domain-name "praktikum.local;
-}```
+}
+```
 ---
 #azis ganteng
