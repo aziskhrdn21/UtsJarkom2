@@ -33,8 +33,14 @@ zone "praktikum.local" {
 #Hapus semua aturan sebelumnya
 sudo iptables -F
 sudo iptables -X
+
+#Memblokir semua koneksi yang masuk ke server
 sudo iptables -P INPUT DROP
+
+#Memblokir semua lalu lintas jaringan yang lewat
 sudo iptables -P INPUT FORWARD DROP
+
+#Bolehkan semua koneksi keluar dari server
 sudo iptables -P INPUT OUTPUT ACCEPT
 
 #Izinkan loopback (localhost)
